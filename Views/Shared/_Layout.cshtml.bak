@@ -1,0 +1,663 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	@Html.Partial("_Head")
+</head>
+<body>
+	@Html.Partial("_BodyOpen")
+	<div class="background">
+		<div class="body-background">
+			<div class="wrapper-header-rows container-fluid">
+				<div class="header-row-top row">
+
+					<div class="phone-wrapper">
+						<div class="wrapper-phone-elements">
+	                        <span class="phone-icon fa fa-phone"></span>
+	                        <span class="wrapper-phone-text">
+	                            <!-- <span class="phone-text">Call Us</span> -->
+	                            <span class="phone-number">
+	                                <span class="linked"><a href="tel:+1-800-778-2217">1.800.778.2217</a></span>
+	                            </span>
+	                        </span>
+	                    </div>
+
+					</div>
+
+					<div class="search-wrapper">
+                        <div class="ico-search-wrapper">
+                            <img class="ico-search" src="@Html.Token("SkinPath")/dist/images/ico-lock.png" alt="" />
+                        </div>
+						<div class="search">
+							@Html.Partial(ViewNames.SearchPartial)
+						</div>
+					</div>
+
+					<div class="account-wrapper">
+						<ul class="nav navbar-nav">
+                            <li>
+                                <a href="@Url.Action("Index", "Account")">
+                                    <span class="glyphicon glyphicon glyphicon-user"></span>
+                                    @Html.StringResource("responsiveskin.accountlabel")
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/shoppingcart.aspx">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    @Html.StringResource("responsiveskin.cartcountlabel")
+                                    ( @Html.Token("NUM_CART_ITEMS") )
+                                </a>
+                            </li>
+                        </ul>
+					</div>
+
+				</div>
+
+                <!-- start logo, navigation wrapper -->
+    			<div class="header-row-bottom row">
+    				<div class="navbar navbar-default topnav" role="navigation">
+
+                        <!-- start small nav -->
+    					<div class="navbar-header">
+                            
+    						<div class="wrapper-button-mobile">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-nav-collapse">
+        							<span class="sr-only">Toggle navigation</span>
+        							<span class="icon-bar"></span>
+        							<span class="icon-bar"></span>
+        							<span class="icon-bar"></span>
+        						</button>
+                            </div>
+
+                            <div class="wrapper-logo-mobile">
+        						<a class="navbar-brand visible-xs menu-label" data-toggle="collapse" data-target="#top-nav-collapse" href="/">
+        							<img class="logo" src="@Html.Token("SkinPath")/dist/images/logo-lockpeople.png" alt="" />
+        						</a>
+                            </div>
+
+    					</div>
+                        <!-- end small nav -->
+
+                        <!-- start large nav -->
+    					<div class="navbar-collapse collapse" id="top-nav-collapse">
+
+    						<div class="logo-wrapper">
+    							<a href="/">
+    								<img class="logo" src="@Html.Token("SkinPath")/dist/images/logo-lockpeople.png" alt="" />
+    							</a>
+    						</div>
+
+    						<ul class="navbar-wrapper nav navbar-nav">
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        Padlocks
+                                        <span class="caret"></span>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/cam-locks.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/32/cam-locks">Cam Locks</a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/combination.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/11/combination-padlocks">Combination Padlocks</a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/discus-padlocks.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/23/diskus-padlocks">Diskus Padlocks</a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/hasps.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/17/hasps">Hasps</a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/hidden-shackle-padlocks.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/16/hidden-shackle-padlocks">Hidden Shackle Padlocks</a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/high-security-padlocks.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/24/high-security-padlocks">High Security Padlocks</a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/key-storage.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/27/key-storage">Key Storage</a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/laminated-body-padlocks.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/1/laminated-body-padlocks">Laminated Body Padlocks</a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/savlok-kits.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/35/savlok-kits">SavLok Kits</a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/shouded-shackle-padlocks.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/7/shrouded-shackle-padlocks">Shrouded Shackle Padlocks</a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/solid-body-padlocks.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/3/solid-body-padlocks">Solid Body Padlocks</a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/warded-padlocks.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/10/warded-padlocks">Warded Padlocks</a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/weather-resistant-padlocks.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/9/weather-resistant-padlocks">Weather Resistant Padlocks</a>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        Recreational
+                                        <span class="caret"></span>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/bike-locks.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/34/bike-locks">Bike Locks</a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/gun-locks.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/42/gun-locks">Gun Locks</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        Safety Lockout
+                                        <span class="caret"></span>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/cable-lockout.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/46/cable-lockout">Cable Lockout</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/electrical-lockout.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/43/electrical-lockout">Electrical Lockout</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/group-lockbox.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/47/group-lock-boxes">Group Lock Boxes</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/lockout-kits.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/48/lockout-kits">Lockout Kits</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/pneumatic-lockout.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/45/pneumatic-lockout">Pneumatic Lockout</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/safety-lockout-padlocks.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/6/safety-lockout-padlocks">Safety Lockout Padlocks</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/valve-lockout.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/44/valve-lockout">Valve Lockout</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        Locker Locks
+                                        <span class="caret"></span>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/ada-locker-locks.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/29/ada-locker-locks">ADA Locker Locks</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/built-in-locker-locks.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/30/built-in-locker-locks">Built-In Locker Locks</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/standard-combination-padlocks.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/13/standard-combination-padlocks">Combination Padlocks</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        Chain &amp; Cable
+                                        <span class="caret"></span>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/cable-locks.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/22/cable-locks">Cable Locks</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/cables.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/21/cables">Cables</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/metal-chain.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/41/metal-chain">Metal Chain</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nav-link-wrapper">
+                                                <span class="nav-link-image">
+                                                    <img src="@Html.Token("SkinPath")/dist/images/navigation/plastic-chain.png" alt="logo" />
+                                                </span>
+                                                <a class="nav-link" href="/category/33/plastic-chain">Plastic Chain</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+    						</ul>
+
+
+                            <ul class="nav navbar-nav navbar-right hidden-sm hidden-md hidden-lg">
+                                <li>
+                                    <a href="@Url.Action("Index", "Account")">@Html.StringResource("responsiveskin.accountlabel")
+                                        <span class="glyphicon glyphicon-log-in"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Html.Token("SIGNINOUT_LINK")">@Html.Token("SIGNINOUT_TEXT")
+                                        <span class="glyphicon glyphicon-list-alt"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="shoppingcart.aspx">
+                                        <span class="glyphicon glyphicon-shopping-cart">
+                                        </span>
+                                        @Html.StringResource("responsiveskin.cartcountlabel")
+                                        ( @Html.Token("NUM_CART_ITEMS") items)
+                                    </a>
+                                </li>
+                            </ul>
+
+    					</div>
+                        <!-- end large nav -->
+    				</div>
+    			</div>
+                <!-- end logo, navigation wrapper -->
+
+            </div>
+			
+
+            <div class="container-fluid">
+			     <div class="notice-area"></div>
+				
+				<div class="notices">
+					@Html.Action(ActionNames.Index, ControllerNames.Notice)
+				</div>
+				
+                @Html.Action(
+					actionName: "Detail",
+					controllerName: "Breadcrumb",
+					routeValues: new
+					{
+						PageTitle = ViewBag.PageTitle,
+						PathInfo = ViewBag.PathInfo
+					})
+            </div>
+
+				<div class="body-wrapper">
+					<!-- Contents start -->
+					@RenderBody()
+					<!-- Contents end -->
+				</div>
+
+			</div>
+
+<!-- 		<div class="footer">
+			<div class="container">
+				@Html.Topic("Template.footer")
+				<div class="sub-footer">
+					@Html.Topic("Template.SubFooter")
+				</div>
+			</div>
+		</div> -->
+
+
+<!--FOOTER-->
+<div class="container-fluid container-footer">
+    <div class="row row-footer">
+        <div class="info-wrapper">
+
+            <!--START FIRST FOOTER BOX-->
+            <div class="info-footer footer1">
+
+                <div class="padlock-pros">
+                    <a href="/">
+                        <img class="logo img-responsive" src="@Html.Token("SkinPath")/dist/images/logo-lockpeople.png" alt="" />
+                    </a>
+                    <div class="logo-link-text"><a href="/">lockpeople.com</a></div>
+                    
+                </div>
+                <div class="contact">
+                    <h1><a href="tel:+1-800-778-2217">1-800-778-2217</a></h1>
+                    <span>Corporate Headquarters:</span>
+                    <span>7365 Mission Gorge Rd. STE F</span>
+                    <span>San Diego, CA 92120</span>
+                </div>
+
+                <div class="logo-affiliates">
+                    <div>
+                        <img class="better-business" src="/images/assets/BBB.png" alt="" />
+                    </div>
+
+                    <div>
+                        <a href="/topic/secure">
+                            <img class="secure" src="/images/assets/HPI_Secure.png" alt="" />
+                        </a>
+                    </div>
+                    
+                    <div>
+                        <img class="credit-cards" src="/images/assets/CreditCards.png" alt="" />
+                    </div>
+                    
+                    <div>
+                        <img class="paypal" src="/images/assets/Paypal.jpg" alt="" />
+                    </div>
+                    
+                </div>
+            </div>
+            <!--END FIRST FOOTER BOX-->
+
+            <!--START SECOND FOOTER BOX-->
+            <div class="info-footer footer2">
+                <div class="content-left">
+                    <h3>Top Categories</h3>
+                    <ul>
+                        <li><a href="@Url.Action("combination-padlocks", "Category/11/")">Combination Padlocks</a></li>
+                        <li><a href="@Url.Action("laminated-body-padlocks", "Category/1/")">Laminated Padlocks</a></li>
+                        <li><a href="@Url.Action("safety-lockout", "Category/5/")">Safety Lockout</a></li>
+                        <li><a href="@Url.Action("locker-locks", "Category/31/")">Locker Locks</a></li>
+                        <li><a href="@Url.Action("savlok-kits", "Category/35/")">SavLok Kits</a></li>
+                        <li><a href="https://buildalock.com" target="_blank">Match my Key</a></li>
+                    </ul>
+                </div>
+                <div class="content-right">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="@Url.BuildTopicLink("about")">About Us</a></li>
+                        <li><a href="@Url.Action("Index", "ContactUs")">Contact Us</a></li>
+                        <li><a href="@Url.BuildTopicLink("Privacy")">Privacy Policy</a></li>
+                        <li><a href="@Url.BuildTopicLink("termsandconditions")">Terms and Conditions</a></li>
+
+                        <li><a href="@Url.Action("Index", "Account")#OrderHistory">Order History</a></li>
+                        <li><a href="@Url.BuildTopicLink("Shipping")">Shipping Information</a></li>
+                        <li><a href="@Url.BuildTopicLink("Returns")">Return Policy</a></li>
+                        <!-- <li><a href="@Url.Action("Index", "ContactUs")">Feedback</a></li> -->
+                        <!-- <li><a href="@Url.Action("Index", "Sitemap")">Sitemap</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="social">
+                    <div class="content-left">
+                        <h3>Connect With Us</h3>
+                        <ul>
+                            <li class="fa fa-facebook">
+                                <a href="http://www.facebook.com/thelockpeople" target="_blank"></a>
+                            </li>
+                            <li class="fa fa-twitter">
+                                <a href="http://www.twitter.com/thelockpeople" target="_blank"></a>
+                            </li>
+                            <li class="fa fa-instagram">
+                                <a href="http://www.instagram.com/thelockpeople" target="_blank"></a>
+                            </li>
+                            <li class="fa fa-youtube">
+                                <a href="https://www.youtube.com/thelockpeople" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-right">
+                        <ul>
+                            <li>
+                                <a id="LivechatButtonx" href="https://chat.livechatinc.net/licence/1032405/open_chat.cgi?lang=en&amp;groups=0" target="chat_1032405_chat.livechatinc.net" onclick="window.open('https://chat.livechatinc.net/licence/1032405/open_chat.cgi?lang=en&amp;groups=0&amp;'+'dc='+escape(document.cookie+';l='+document.location+';r='+document.referer+';s='+typeof lc_session),'Czat_1032405','width=530,height=520,resizable=yes,scrollbars=no,status=1');return false;"><img src="https://chat.livechatinc.net/licence/1032405/button.cgi?lang=en&amp;groups=0&amp;d=1475094635553" style="border: 0px;" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                </div>
+                    <div class="copy">
+                       <span>Copyright © 1997-2018 - Hodge Products, Inc.</span>
+                       <span>All rights reserved.</span>
+                       <span>Serving people and businesses since 1971</span>
+                    </div>
+            </div>
+            <!--END SECOND FOOTER BOX-->
+
+            <!--START THIRD FOOTER BOX-->
+            <div class="info-footer footer3">
+
+                <h4>Request a Quote</h4>
+
+                <form action="/contactus" method="post" novalidate="novalidate">
+                    <div class="form contact-form">
+                        <div class="form-group-full form-group has-feedback">
+                            <div class="entry-feedback-wrapper">
+                                <input autocomplete="name"
+                                       class="form-control text-box single-line"
+                                       data-val="true" data-val-required="Your first and last name are required."
+                                       id="From" name="From" placeholder="Full Name" required="required" type="text" value="" aria-required="true">
+                                <i class="fa form-control-feedback"></i>
+                            </div>
+                            <span class="field-validation-valid form-validation-message" data-valmsg-for="From" data-valmsg-replace="true"></span>
+                        </div>
+
+                        <div class="form-group-full form-group has-feedback">
+                            <div class="entry-feedback-wrapper">
+                                <input autocomplete="tel"
+                                       class="form-control text-box single-line"
+                                       data-val="true" data-val-required="Your phone number is required."
+                                       id="Phone" name="Phone" placeholder="Phone Number" required="required" type="tel" value="" aria-required="true">
+                                <i class="fa form-control-feedback"></i>
+                            </div>
+                            <span class="field-validation-valid form-validation-message" data-valmsg-for="Phone" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group-full form-group has-feedback">
+                        <div class="entry-feedback-wrapper">
+                            <input autocomplete="email"
+                                   class="form-control text-box single-line"
+                                   data-val="true" data-val-regex="ContactUs.EmailAddress.Format" data-val-regex-pattern="^.+@@.+\..+$" data-val-required="Your email address is required."
+                                   id="Email" name="Email" placeholder="Email Address" required="required" type="email" value="" aria-required="true">
+                            <i class="fa form-control-feedback"></i>
+                        </div>
+                        <span class="field-validation-valid form-validation-message" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                    </div>
+
+                    <div class="form-group-full form-group has-feedback">
+                        <div class="entry-feedback-wrapper">
+                            <input class="form-control text-box single-line"
+                                   data-val="true" data-val-required="Email subject is required."
+                                   id="Subject" name="Subject" placeholder="Subject" required="required" type="hidden" value="padlocksdirect.com - Quote Request" aria-required="true">
+                            <i class="fa form-control-feedback"></i>
+                        </div>
+                        <span class="field-validation-valid form-validation-message" data-valmsg-for="Subject" data-valmsg-replace="true"></span>
+                    </div>
+
+                    <div class="form-group-full form-group has-feedback">
+                        <div class="entry-feedback-wrapper">
+                                <textarea class="form-control text-box multi-line"
+                                          data-val="true" data-val-required="Message is required." id="Message" name="Message"
+                                          placeholder="What can we help you with?" required="required" aria-required="true"></textarea>
+                            <i class="fa form-control-feedback"></i>
+                        </div>
+                        <span class="field-validation-valid form-validation-message" data-valmsg-for="Message" data-valmsg-replace="true"></span>
+                    </div>
+
+                    <div class="form-group-captcha form-group-full form-group has-feedback">
+                        <div class="input-group entry-feedback-wrapper">
+                            <input class="form-control text-box single-line"
+                                   data-val="true" data-val-required="Captcha is required." id="CaptchaCode" name="CaptchaCode"
+                                   required="required" type="text" value="" aria-required="true">
+                            <span class="input-group-addon input-group-addon-captchaimage">
+                                <img src="/captcha?scope=ContactUsIndex" alt=""></span>
+                        </div>
+                        <span class="field-validation-valid form-validation-message" data-valmsg-for="CaptchaCode" data-valmsg-replace="true"></span>
+                    </div>
+
+                    <div class="page-action-bar contact-us-actions">
+                        <input type="submit" class="btn btn-primary submit-contact-button" value="Submit">
+                    </div>
+                </form>
+
+            </div>
+            <!--END THIRD FOOTER BOX-->
+
+        </div>
+    </div>
+</div>
+<!-- End Footer -->
+
+	</div>
+
+	<!-- Minicart modal -->
+	@Html.Action(ActionNames.Index, ControllerNames.Minicart, new { cartType = CartTypeEnum.ShoppingCart })
+
+	<!-- Miniwish modal -->
+	@Html.Action(ActionNames.Index, ControllerNames.Minicart, new { cartType = CartTypeEnum.WishCart })
+
+	<!-- Minicart and miniwish resources (javascript and overlay html) -->
+	@Html.Action(ActionNames.MinicartResources, ControllerNames.Minicart)
+	
+	@Html.Partial("_BodyClose")
+</body>
+</html>
